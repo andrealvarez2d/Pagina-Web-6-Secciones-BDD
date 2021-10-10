@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,10 +27,101 @@
             </ol>
         </div>
         <div id="cuerpo1">   
-            
+            <center>
+                <p>VULNERABILIDADES MAS COMUNES EN UNA BASE DE DATOS</p>
+                <img src="img/Imagen3.png" alt="vulnerabilidades" width="600px">
+            </center>
+            <p>
+                Las bases de datos son uno de los sistemas que más sufren algún tipo de ataque por terceras personas, 
+                con la intención de robar información importante. Para acceder a ella, los hackers buscan cualquier tipo de vulnerabilidad que 
+                no haya sido controlada para acceder al sistema y hacerse con aquello que les sea de interés.
+            </p>
+            <p>
+                Indagaremos sobre algunas de las vulnerabilidades más comunes que nos podemos encontrar en las bases de datos y que en muchos 
+                casos son la fuente de todos los problemas de seguridad.
+            </p>
+            <center>
+                <img src="img/Imagen4.png" alt="vulnerabilidades2" width="400px">
+            </center>
         </div>
         <div id="cuerpo2">
-            
+            <center>
+                <p>1. NOMBRE DE USUARIO/CONTRASEÑA EN BLANCO O DÉBILES</p>
+            </center>
+            <p>
+                Hoy en día no es raro encontrarnos pares de datos usuario/contraseña del tipo admin/12345 o similar. Esta es la primera línea de 
+                defensa de entrada a nuestra información y debemos optar por el uso de algo más complejo que sea complicado de conseguir por parte 
+                de cualquier atacante.
+            </p>
+            <p>
+                A la hora de generar una contraseña para un usuario que estemos creando es recomendable usar tanto letras como números, así como de 
+                caracteres especiales tipo ¡, ¿, %... y con una longitud superior a 8 caracteres. 
+            </p>
+            <center>
+                <p>2. PREFERENCIA DE PRIVILEGIOS DE USUARIO POR PRIVILEGIOS DE GRUPO</p>
+            </center>
+            <p>
+                En ocasiones muchos usuarios reciben más privilegios sobre la base de datos de los que realmente necesitan, por lo que es recomendable 
+                modificar los privilegios otorgados a los usuarios que estarán en contacto con la información con el fin de que no puedan realizar 
+                modificaciones más allá de las autorizadas.
+            </p>
+            <p>
+                Si por ejemplo un usuario sólo realizará consultas a la base de datos pero no podrá modificar ningún registro ni insertar nada nuevo, 
+                no tiene sentido que le ofrezcamos esos privilegios, ya que lo que estamos haciendo es abrir una puerta para un eventual ataque.
+            </p>
+            <center>
+                <p>3. CARACTERÍSTICAS DE BASES DE DATOS INNECESARIAMENTE HABILITADAS</p>
+            </center>
+            <p>
+                Cada instalación de base de datos viene con una serie de paquetes o módulos adicionales de distintas formas y tamaños que en muy pocas 
+                ocasiones todos ellos son utilizadas, lo que las convierten en una posible puerta de entrada para sufrir algún tipo de ataque si en esos 
+                paquetes se descubre cualquier problema de seguridad. Para reducir riesgos, es recomendable que los usuarios detecten esos paquetes que no 
+                se utilizan y se desactiven del servidor donde estén instalados. 
+            </p>
+            <center>
+                <p>4. DESBORDAMIENTO DE BÚFER</p>
+            </center>
+            <p>
+                Se trata de otro de los medios favoritos utilizados por los piratas y que se dan por el exceso de información que se puede llegar a enviar 
+                por medio del ingreso de información mediante el uso de formularios, es decir, se recibe mucha más información de lo que la aplicación espera. 
+                Por poner un ejemplo, si se espera la entrada de una cuenta bancaria que puede ocupar unos 25 caracteres y se permite la entrada de muchos más 
+                caracteres desde ese campo, se podría dar este problema.
+            </p>
+            <center>
+                <p>5. BASES DE DATOS SIN ACTUALIZAR</p>
+            </center>
+            <p>
+                Como ocurre con cualquier tipo de aplicación que tengamos instalada en nuestra máquina, es necesario ir actualizando la versión de nuestra base de 
+                datos con las últimas versiones lanzadas al mercado, ya que en ellas se solucionan aquellos problemas de seguridad detectados, por lo que pondremos 
+                más barreras a los posibles atacantes.
+            </p>
+            <p>
+                Para ello es muy importante estar informados de todos las noticias relacionadas con la base de datos que estemos utilizando para saber en todo momento 
+                si algo nuevo ha sido lanzado al mercado que pueda solucionar cualquier brecha de seguridad.
+            </p>
+            <center>
+                <p>6. DATOS SENSIBLES SIN CIFRAR</p>
+            </center>
+            <p>
+                Aunque pueda ser algo obvio, a la hora de la verdad no todo el mundo cifra la información más importante que se almacena en base de datos. Esto es una 
+                buena práctica para que en caso de hackeo, sea complicado para el atacante poder recuperar esa información.
+            </p>
+            <p>
+                Por poner un ejemplo, las contraseñas de acceso a un sitio por parte de los usuarios podrían ser cifradas utilizando el algoritmo MD5. 
+            </p>
+            <center>
+                <p>7. INYECCIONES SQL</p>
+            </center>
+            <p>
+                Un ataque de este tipo puede dar acceso a alguien a una base de datos completa sin ningún tipo de restricción, pudiendo llegar incluso a copiar y 
+                modificar los datos.
+            </p>
+            <p>
+                El funcionamiento de este tipo de vulnerabilidades es similar al que puede ocurrir en los portales web, donde una mala limpieza de los datos de entrada 
+                puede hace que ejecuten código no deseado en la base de datos, pudiendo coger el control de la plataforma. Muchos proveedores ofrecen soluciones para este 
+                tipo de situaciones, pero para que surjan efecto es necesario realizar la actualización de la aplicación a la última versión estable disponible que exista en 
+                cada momento.
+            </p>
         </div>
         <div id="piepagina">
            <center>
